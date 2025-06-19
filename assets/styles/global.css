@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-areas: 
+    "header header"
+     "main aside";
+    grid-template-columns: 2fr .8fr; 
+    grid-template-rows: auto 1fr;
+}
+
+@media (max-width: 1400px) {
+  body {
+    grid-template-areas:
+      "header"
+      "main"
+      "aside";
+    grid-template-columns: 1fr; 
+  }
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* header */
+
+header {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    grid-area: header;
+}
+
+.header-wrap-1 {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.header-wrap-1 button:first-child img {
+    width: 24px;
+    height: 24px;
+}
+.header-wrap-1 button:nth-child(2) img {
+    width: 90px;
+    height: 20px;
+}
+.wrap-input {
+    display: flex;
+    align-items: center;
+}
+.wrap-input input {
+    width: 348px;
+    height: 40px;
+    padding-left: 6px;
+    border: 1px solid #CCCCCC;
+}
+.wrap-input button {
+    border: 1px solid #CCCCCC;
+    border-left: none; 
+    background-color: #F8F8F8;
+    width: 57px;
+    height: 40px;
+}
+.wrap-input button img {
+    width: 24px;
+    height: 24px;
+}
+.header-wrap-2 {
+   display: flex;
+   align-items: center;
+   gap: 32px;
+}
+
+.profile img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+}
+
+/* main */
+
+main {
+    grid-area: main;
+    margin-left: 5rem;
+    margin-top: 28px;
+}
+
+.current-video img {
+    width: 100%;
+    max-width: 952px;
+    height: 537px;
+}
+.content-video h2 {
+    padding: 1rem 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+.controls-video {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+.channel-profile {
+    display: flex;
+    gap: 12px;
+}
+.channel-profile-content h4 {
+    font-weight: 600;
+    font-size: 14px;
+}
+.channel-profile-content span {
+    font-size: 14px;
+    color: #515151;
+}
+.btn-subscribe {
+    padding: 12px 35px;
+    background-color: #CC0000;
+    color: #FFFFFF;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+[class^="btn-"] {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+[class^="btn-"] span {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+}
+.info {
+    width: 510px;
+    margin-top: 16px;
+}
+.info h3 {
+    font-weight: 600;
+    font-size: 14px;
+}
+.info p {
+    font-size: 14px;
+    color: #515151;
+    margin-top: 16px;
+}
+
+/* aside */
+
+aside {
+    grid-area: aside;
+    margin-left: 25px;
+    margin-top: 22px;
+
+    width: 372px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+aside article {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+aside article img {
+    width: 160px;
+    height: 90px;
+}
+
+aside article h3 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000000;
+
+    margin-bottom: 8px;
+}
+
+aside article p {
+    font-size: 12px;
+    color: #515151;
+    margin-bottom: 7px;
+}
+
+aside article span {
+    font-size: 12px;
+    color: #515151;
+    margin-bottom: 7px;
+}
+
+@media (max-width: 1400px) {
+  aside {
+    margin-left: 5rem; 
+    width: 90%;
+  }
+}

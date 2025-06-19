@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./assets/styles/global.css" rel="stylesheet" />
+
+    <title>Desafio de Flexbox - DIO</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrap-1">
+        <button>
+          <img
+            src="./assets/imgs/menu.svg"
+            alt="menu do youtube"
+            title="Menu"
+          />
+        </button>
+        <button>
+          <img src="./assets/imgs/youtube-logo.svg" alt="logo do youtube" />
+        </button>
+      </div>
+
+      <div class="wrap-input">
+        <input />
+        <button>
+          <img
+            src="./assets/imgs/search.svg"
+            alt="área de pesquisa"
+            title="Pesquisar"
+          />
+        </button>
+      </div>
+
+      <div class="header-wrap-2">
+        <button>
+          <img
+            src="./assets/imgs/video.svg"
+            alt="botão para upload de vídeo"
+            title="Vídeo"
+          />
+        </button>
+        <button>
+          <img
+            src="./assets/imgs/bell.svg"
+            alt="botão de notificações"
+            title="Notificações"
+          />
+        </button>
+        <button class="profile">
+          <img
+            src="https://avatars.githubusercontent.com/u/96707427?s=400&u=58d91f2e8ca562774a9d0195d4d510476244d3c5&v=4"
+            alt="imagem do usuário"
+            title="perfil"
+          />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="current-video">
+          <img src="./assets/imgs/thumb-video.svg" alt="logo do canal" />
+        </div>
+
+        <div class="content-video">
+          <h2>
+            Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo
+            Invertido com HTML e CSS
+          </h2>
+
+          <div class="controls-video">
+            <div class="channel-profile">
+              <img src="./assets/imgs/logo-channel.svg" alt="logo do canal" />
+              <div class="channel-profile-content">
+                <h4>DIO</h4>
+                <span>83,3 mil inscritos</span>
+              </div>
+            </div>
+
+            <button class="btn-subscribe">inscreva-se</button>
+
+            <button class="btn-like">
+              <img
+                src="./assets/imgs/like.svg"
+                alt="maracr como gostei"
+                title="Marcar como gostei"
+              /><span>2 mil</span>
+            </button>
+            <button class="btn-unlike">
+              <img
+                src="./assets/imgs/unlike.svg"
+                alt="marcar como não gostei"
+                title="Marcar como não gostei"
+              /><span>Não gostei</span>
+            </button>
+
+            <button class="btn-share">
+              <img
+                src="./assets/imgs/share.svg"
+                alt="compartilhar"
+                title="Compartilhar"
+              /><span>Compartilhar</span>
+            </button>
+            <button class="btn-download">
+              <img
+                src="./assets/imgs/download.svg"
+                alt="download"
+                title="Download"
+              /><span>Download</span>
+            </button>
+          </div>
+
+          <div class="info">
+            <h3>28.418 visualizações Transmitido ao vivo em 23 ago. de 2022</h3>
+            <p>
+              Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS.
+              Para isso, criaremos uma landing page com a temática da série
+              Stranger Things, a qual contará com a implementação de um theme
+              switcher (light e dark) para explorarmos os mistérios do mundo
+              invertido.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <article>
+        <img src="./assets/imgs/imgs-aside/thumb-1.svg" alt="capa do vídeo" />
+
+        <div>
+          <h3>Geração Tech Unimed - BH - Ciência de Dados</h3>
+
+          <p>DigitalInnovationOne</p>
+
+          <span>2,1 mil visualizações</span>
+          <br />
+          <span>Transmitido há 2 dias</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="./assets/imgs/imgs-aside/thumb-2.svg" alt="capa do vídeo" />
+
+        <div>
+          <h3>Scrum Talks</h3>
+
+          <p>DigitalInnovationOne</p>
+
+          <span>1,6 mil visualizações</span>
+          <br />
+          <span>Transmitido há 3 dias</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="./assets/imgs/imgs-aside/thumb-3.svg" alt="capa do vídeo" />
+
+        <div>
+          <h3>Machine Learning Avançado - Fast Track</h3>
+
+          <p>DigitalInnovationOne</p>
+
+          <span>1,7 mil visualizações</span>
+          <br />
+          <span>Transmitido há 4 dias</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="./assets/imgs/imgs-aside/thumb-4.svg" alt="capa do vídeo" />
+
+        <div>
+          <h3>Global Skills #2 - Project Planning</h3>
+
+          <p>DigitalInnovationOne</p>
+
+          <span>971 mil visualizações</span>
+          <br />
+          <span>Transmitido há 5 dias</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="./assets/imgs/imgs-aside/thumb-5.svg" alt="capa do vídeo" />
+
+        <div>
+          <h3>Como aprender a programar Python do ZERO</h3>
+
+          <p>DigitalInnovationOne</p>
+
+          <span>711 mil visualizações</span>
+          <br />
+          <span>Transmitido há 6 dias</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="./assets/imgs/imgs-aside/thumb-1.svg" alt="capa do vídeo" />
+
+        <div>
+          <h3>Geração Tech Unimed - BH - Ciência de Dados</h3>
+
+          <p>DigitalInnovationOne</p>
+
+          <span>2,1 mil visualizações</span>
+          <br />
+          <span>Transmitido há 2 dias</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="./assets/imgs/imgs-aside/thumb-2.svg" alt="capa do vídeo" />
+
+        <div>
+          <h3>Scrum Talks</h3>
+
+          <p>DigitalInnovationOne</p>
+
+          <span>1,6 mil visualizações</span>
+          <br />
+          <span>Transmitido há 3 dias</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="./assets/imgs/imgs-aside/thumb-3.svg" alt="capa do vídeo" />
+
+        <div>
+          <h3>Machine Learning Avançado - Fast Track</h3>
+
+          <p>DigitalInnovationOne</p>
+
+          <span>1,7 mil visualizações</span>
+          <br />
+          <span>Transmitido há 4 dias</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="./assets/imgs/imgs-aside/thumb-4.svg" alt="capa do vídeo" />
+
+        <div>
+          <h3>Global Skills #2 - Project Planning</h3>
+
+          <p>DigitalInnovationOne</p>
+
+          <span>971 mil visualizações</span>
+          <br />
+          <span>Transmitido há 5 dias</span>
+        </div>
+      </article>
+    </aside>
+  </body>
+</html>
