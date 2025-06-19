@@ -2,24 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     font-family: Roboto, sans-serif;
 }
 
 body {
-    max-width: 1440px;
+    max-width: 90rem;
     margin: 0 auto;
 
     display: grid;
     grid-template-areas: 
     "header header"
-     "main aside";
-    grid-template-columns: 2fr .8fr; 
+    "main aside";
+    grid-template-columns: 2fr 0.8fr; 
     grid-template-rows: auto 1fr;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 87.5rem) {
   body {
     grid-template-areas:
       "header"
@@ -38,7 +38,7 @@ button {
 /* header */
 
 header {
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,47 +49,46 @@ header {
 .header-wrap-1 {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 .header-wrap-1 button:first-child img {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .header-wrap-1 button:nth-child(2) img {
-    width: 90px;
-    height: 20px;
+    width: 5.625rem;
+    height: 1.25rem;
 }
 .wrap-input {
     display: flex;
     align-items: center;
 }
 .wrap-input input {
-    width: 348px;
-    height: 40px;
-    padding-left: 6px;
+    width: 21.75rem;
+    height: 2.5rem;
+    padding-left: 0.375rem;
     border: 1px solid #CCCCCC;
 }
 .wrap-input button {
     border: 1px solid #CCCCCC;
     border-left: none; 
     background-color: #F8F8F8;
-    width: 57px;
-    height: 40px;
+    width: 3.5625rem;
+    height: 2.5rem;
 }
 .wrap-input button img {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .header-wrap-2 {
    display: flex;
    align-items: center;
-   gap: 32px;
+   gap: 2rem;
 }
-
 .profile img {
-    width: 34px;
-    height: 34px;
-    border-radius: 50px;
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 3.125rem;
 }
 
 /* main */
@@ -97,114 +96,114 @@ header {
 main {
     grid-area: main;
     margin-left: 5rem;
-    margin-top: 28px;
+    margin-top: 1.75rem;
 }
 
 .current-video img {
     width: 100%;
-    max-width: 952px;
-    height: 537px;
+    max-width: 59.5rem;
+    height: 33.5625rem;
 }
 .content-video h2 {
     padding: 1rem 0;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .controls-video {
     display: flex;
     align-items: center;
-    gap: 42px;
+    gap: 2.625rem;
 }
 .channel-profile {
     display: flex;
-    gap: 12px;
+    gap: 0.75rem;
 }
 .channel-profile-content h4 {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .channel-profile-content span {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #515151;
 }
 .btn-subscribe {
-    padding: 12px 35px;
+    padding: 0.75rem 2.1875rem;
     background-color: #CC0000;
     color: #FFFFFF;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     white-space: nowrap;
 }
 [class^="btn-"] {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
     white-space: nowrap;
 }
+
 [class^="btn-"] span {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #000000;
 }
 .info {
-    width: 510px;
-    margin-top: 16px;
+    width: 31.875rem;
+    margin-top: 1rem;
 }
 .info h3 {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .info p {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #515151;
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 /* aside */
 
 aside {
     grid-area: aside;
-    margin-left: 25px;
-    margin-top: 22px;
+    margin-left: 1.5625rem;
+    margin-top: 1.375rem;
 
-    width: 372px;
+    width: 23.25rem;
 
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
 }
 
 aside article {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 aside article img {
-    width: 160px;
-    height: 90px;
+    width: 10rem;
+    height: 5.625rem;
 }
 
 aside article h3 {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #000000;
-
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 aside article p {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #515151;
-    margin-bottom: 7px;
+    margin-bottom: 0.4375rem;
 }
 
 aside article span {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #515151;
-    margin-bottom: 7px;
+    margin-bottom: 0.4375rem;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 87.5rem) {
   aside {
     margin-left: 5rem; 
     width: 90%;
